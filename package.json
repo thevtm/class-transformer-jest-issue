@@ -1,0 +1,31 @@
+{
+  "name": "class-transformer-jest-issue",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "tsc && node ./dist/index.js",
+    "test": "jest"
+  },
+  "author": "Vinícius T. M.",
+  "license": "ISC",
+  "dependencies": {
+    "@types/jest": "^20.0.2",
+    "@types/node": "^8.0.6",
+    "class-transformer": "^0.1.7",
+    "jest": "^20.0.4",
+    "reflect-metadata": "^0.1.10",
+    "ts-jest": "^20.0.6",
+    "typescript": "^2.4.1"
+  },
+  "jest": {
+    "transform": {
+      ".(ts|tsx)": "<rootDir>/node_modules/ts-jest/preprocessor.js"
+    },
+    "testRegex": "(/__tests__/.*|\\.(test|spec))\\.(ts|tsx|js)$",
+    "moduleFileExtensions": [
+      "ts",
+      "js"
+    ]
+  }
+}
